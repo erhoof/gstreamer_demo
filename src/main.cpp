@@ -1,6 +1,8 @@
 #include "essentials.h"
 #include "errors.h"
 
+#include "webcam.h"
+
 int main(int argc, char *argv[]) {
     spdlog::set_pattern("[%m/%d %H:%M:%S] %v");
     spdlog::info("gstreamer_demo is launching");
@@ -22,7 +24,7 @@ int main(int argc, char *argv[]) {
     int rc = 0;
     switch(static_cast<MenuEntry>(value)) {
         case MenuEntry::WEBCAM:
-            //webCam();
+            callWebCamDemo();
             break;
         case MenuEntry::VIDEOPLAYER:
             //videoPlayer();

@@ -5,5 +5,6 @@
 
 #include <gst/gst.h>
 #include "spdlog/spdlog.h"
+#include "spdlog/formatter.h"
 
 #endif // _ESSENTIALS_H_
